@@ -1,4 +1,82 @@
-body{
-    font-family: verdana;
-    text-align: center;
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.page1{
+    display: flex;
+}
+
+/* This is the first section styling*/
+.welcome {
+    z-index: 999;
+    opacity: 70%;
+    background-image: url(/images/sign-in.jpg);
+    width: 60vw;
+    height: 100vh;
+    background-color: #C54310;
+    background-blend-mode: multiply;
+}
+    
+
+.welcome-text{
+    font-weight: lighter;
+    color: white;
+    font-size: 20px;
+    padding: 40px;
+    padding-top: 100px;
+    position: relative;
+    top:40px;
+
+}
+
+/* This is the second section styling*/
+.form{
+    background-color: #F3F6EA;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-text{
+    height: 300px;
+    width: 360px;
+    background-color: #C54310;
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+    padding: 30px;
+    opacity: 80%;
+    border-radius: 30px;
+    color: #F3F6EA;
+}
+
+.form-text label{
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.form-text input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    color: #C54310;
+    height: 45px;
+}
+.form-text button{
+    background-color: #F3F6EA;
+    color: #C54310;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid white;
+    width: 150px;
+    height: 50px;
+    align-self: center;
+    margin: 10px;
 }

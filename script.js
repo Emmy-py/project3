@@ -5,8 +5,12 @@ const resultElement = document.getElementById("resultElement")
 let age;
 
 mySubmit.onclick = function() {
-    age = myText.value
-    age = Number(age)
+    age = myText.value;
+    age = parseInt(age, 10);
+    if (isNaN(age)) {
+        resultElement.textContent = `Please enter a valid number`;
+        return;
+    }
 
     switch (true) {
         case (age > 100):
@@ -27,4 +31,5 @@ mySubmit.onclick = function() {
         default:
             resultElement.textContent = `input correct age`
     }
-}
+    }
+
